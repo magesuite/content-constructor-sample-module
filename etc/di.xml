@@ -13,4 +13,13 @@
             </argument>
         </arguments>
     </type>
+
+    <type name="MageSuite\ContentConstructorFrontend\Service\ComponentPool">
+        <arguments>
+            <argument name="components" xsi:type="array">
+                <item name="hello-world" xsi:type="string">MageSuite\ContentConstructorSampleModule\Block\Component\HelloWorld</item>
+            </argument>
+        </arguments>
+    </type>
+
 </config>
