@@ -1,0 +1,22 @@
+// cc-component-hello-world-preview
+// Preview of hello-world component for cc-layout-builder
+//
+// See http://warpspire.com/kss/ for documentation guidelines.
+// Version 0.0.1
+.cc-hello-world-preview {
+    text-align: center;
+    padding: 4rem 1rem;
+
+    &__hello-world {
+        margin: 0;
+        color: #1f999b !important;
+        text-transform: uppercase;
+        line-height: 1 !important;
+
+        span {
+            font-size: 3rem;
+            color: #333;
+            text-transform: none;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="MageSuite\ContentConstructorAdmin\Model\ComponentsPool">
+        <arguments>
+            <argument name="data" xsi:type="array">
+                <item name="components" xsi:type="array">
+                    <item name="hello-world" xsi:type="array">
+                        <item name="className" xsi:type="string">MageSuite\ContentConstructorSampleModule\Block\Adminhtml\Component\HelloWorld</item>
+                        <item name="name" xsi:type="string">Hello world</item>
+                        <item name="description" xsi:type="string">Hello world sample component.</item>
+                    </item>
+                </item>
+            </argument>
+        </arguments>
+    </type>
+
+    <type name="MageSuite\ContentConstructorFrontend\Service\ComponentPool">
+        <arguments>
+            <argument name="components" xsi:type="array">
+                <item name="hello-world" xsi:type="string">MageSuite\ContentConstructorSampleModule\Block\Component\HelloWorld</item>
+            </argument>
+        </arguments>
+    </type>
+
+</config>

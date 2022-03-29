@@ -1,0 +1,11 @@
+<?php
+/** @var $block \MageSuite\ContentConstructorSampleModule\Block\Component */
+$visibility = $block->getVisibilityClass();
+?>
+<div class="cs-container cs-container--hello-world<?= $visibility ? ' ' .$visibility : ''; ?>">
+    <div class="cs-container__inner">
+        <div class="cs-hello-world">
+            <h1>Hello <?= $block->getData('title') ?></h1>
+        </div>
+    </div>
+</div>
